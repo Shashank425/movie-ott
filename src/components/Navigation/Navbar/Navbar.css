@@ -1,0 +1,39 @@
+.navbar-logo {
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 15px;
+}
+
+.navbar-logo:hover {
+    cursor: pointer;
+}
+
+.navbar-bg {
+    background: #1B0000;
+    box-shadow: 0 4px 15px black;
+    z-index: 10;
+}
+
+.navbar-logo-label {
+    color: wheat;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navbar-logo-label:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar-list-left {
+    margin: 1rem auto 1rem 1rem;
+    list-style: none;
+}
+
+.navbar-list-right {
+    margin: 1rem 1rem 1rem auto;
+    list-style: none;
+}

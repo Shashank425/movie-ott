@@ -1,0 +1,19 @@
+.offcanvas-mod {
+ background-color: wheat !important;
+ top: 128px !important;
+ width: 300px !important;
+ z-index: 0 !important;
+}
+
+.offcanvas-title-mod {
+    color: #1B0000 !important;
+    font-size: 30px !important;
+}
+
+.offcanvas-body-mod {
+    color: #1B0000 !important;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0 !important;
+}

@@ -1,8 +1,7 @@
 .offcanvas-mod {
- background-color: wheat !important;
- top: 128px !important;
- width: 300px !important;
- z-index: 0 !important;
+    background-color: wheat !important;
+    top: 128px !important;
+    width: 300px !important;
 }
 
 .offcanvas-title-mod {
@@ -16,4 +15,24 @@
 
 .offcanvas-backdrop.show {
     opacity: 0 !important;
+}
+
+.genre-unordered-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.genre-list-items {
+    margin: 5px 0 5px 0;
+}
+
+.genre-anchor {
+    font-size: 20px;
+    text-decoration: none;
+    color: #1B0000;
+}
+
+.genre-anchor:hover{
+    cursor: pointer;
+    font-weight: 700;
 }

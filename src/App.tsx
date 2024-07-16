@@ -1,10 +1,13 @@
 import "./App.css";
 import Navigation from "./components/Navigation/Navigation";
-
+import { QueryClientProvider, QueryClient } from "react-query";
 function App() {
+  const queryClient = new QueryClient();
   return (
     <>
-      <Navigation />
+      <QueryClientProvider client={queryClient}>
+        <Navigation />
+      </QueryClientProvider>
     </>
   );
 }

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import Navbar from "./Navbar/Navbar";
+import HotCarousel from "./HotCarousel/HotCarousel";
+import MovieCanvas from "./MovieCanvas/MovieCanvas";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
@@ -10,6 +12,8 @@ const Navigation = () => {
     <>
       <Navbar handleClick={handleClick} />
       <Sidebar show={show} handleClose={handleClose} />
+      <HotCarousel />
+      <MovieCanvas />
     </>
   );
 };

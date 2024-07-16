@@ -1,4 +1,3 @@
-import gaze_logo from "../../../assets/images/gaze_logo_2.jpeg";
 import "./Navbar.css";
 
 interface Props {
@@ -9,7 +8,11 @@ const Navbar = ({ handleClick }: Props) => {
     <>
       <nav className="navbar navbar-expand-lg navbar-bg">
         <div className="container-fluid flex-row">
-          <img src={gaze_logo} className="navbar-logo" onClick={handleClick} />
+          <img
+            src="/gaze_logo_2.jpeg"
+            className="navbar-logo"
+            onClick={handleClick}
+          />
           <ul className="navbar-list-left">
             <li className="d-inline">
               <a className="navbar-logo-label">Movies</a>

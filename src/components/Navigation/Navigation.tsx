@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import Navbar from "./Navbar/Navbar";
 import HotCarousel from "./HotCarousel/HotCarousel";
 import MovieCanvas from "./MovieCanvas/MovieCanvas";
+import { Route, Routes } from "react-router-dom";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
@@ -12,8 +13,17 @@ const Navigation = () => {
     <>
       <Navbar handleClick={handleClick} />
       <Sidebar show={show} handleClose={handleClose} />
-      <HotCarousel />
-      <MovieCanvas />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HotCarousel />
+              <MovieCanvas />
+            </>
+          }
+        />
+      </Routes>
     </>
   );
 };

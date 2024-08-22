@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 interface Props {
   handleClick: () => void;
@@ -15,24 +16,36 @@ const Navbar = ({ handleClick }: Props) => {
           />
           <ul className="navbar-list-left">
             <li className="d-inline">
-              <a className="navbar-logo-label">Movies</a>
+              <NavLink to="/" className="navbar-logo-label">
+                Movies
+              </NavLink>
             </li>
             <li className="d-inline">
-              <a className="navbar-logo-label">Shows</a>
+              <NavLink to="/shows" className="navbar-logo-label">
+                Shows
+              </NavLink>
             </li>
             <li className="d-inline">
-              <a className="navbar-logo-label">Shorts</a>
+              <NavLink to="/shorts" className="navbar-logo-label">
+                Shorts
+              </NavLink>
             </li>
             <li className="d-inline">
-              <a className="navbar-logo-label">Actors</a>
+              <NavLink to="/actors" className="navbar-logo-label">
+                Actors
+              </NavLink>
             </li>
           </ul>
           <ul className="navbar-list-right">
             <li className="d-inline">
-              <a className="navbar-logo-label">Login</a>
+              <NavLink to="/login" className="navbar-logo-label">
+                Login
+              </NavLink>
             </li>
             <li className="d-inline">
-              <a className="navbar-logo-label">Sign Up</a>
+              <NavLink to="/signup" className="navbar-logo-label">
+                Sign Up
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -38,8 +38,8 @@ const Sidebar = ({ show, handleClose }: Props) => {
         </Offcanvas.Header>
         <Offcanvas.Body className="offcanvas-body-mod">
           <ul className="genre-unordered-list">
-            {genres.map((genre) => (
-              <li className="genre-list-items">
+            {genres.map((ind, genre) => (
+              <li key={ind} className="genre-list-items">
                 <a className="genre-anchor">{genre}</a>
               </li>
             ))}
@@ -52,8 +52,8 @@ const Sidebar = ({ show, handleClose }: Props) => {
         </Offcanvas.Header>
         <Offcanvas.Body className="offcanvas-body-mod">
           <ul className="genre-unordered-list">
-            {languages.map((language) => (
-              <li className="genre-list-items">
+            {languages.map((ind, language) => (
+              <li key={ind} className="genre-list-items">
                 <a className="genre-anchor">{language}</a>
               </li>
             ))}

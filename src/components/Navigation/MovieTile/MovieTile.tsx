@@ -1,18 +1,19 @@
 import { Button, Card } from "react-bootstrap";
 import "./MovieTile.css";
 
-const MovieTile = () => {
+interface Props {
+  imgSrc: string;
+  cardTitle: string;
+  cardText: string;
+}
+
+const MovieTile = ({ imgSrc, cardTitle, cardText }: Props) => {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="./godfather.jpg" />
+      <Card.Img variant="top" src={imgSrc} />
       <Card.Body>
-        <Card.Title>The Godfather</Card.Title>
-        <Card.Text>
-          Italian-American crime family of Don Vito Corleone (Marlon Brando).
-          When the don's youngest son, Michael (Al Pacino), reluctantly joins
-          the Mafia, he becomes involved in the inevitable cycle of violence and
-          betrayal.
-        </Card.Text>
+        <Card.Title>{cardTitle}</Card.Title>
+        <Card.Text>{cardText}</Card.Text>
         <Button variant="primary">Watch Movie</Button>
       </Card.Body>
     </Card>
